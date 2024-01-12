@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/c099e47c80.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <i class="fa-solid fa-store"></i>
+          <h1>Store</h1>
+        </div>
+
+        <ul>
+          <li><a href="#" class="active">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Contact</a></li>
+          <li>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="content">
+        <div class="div-text">
+          <h4>BUY LESS. CHOOSE WELL. MAKE IT LAST</h4>
+          <h3>All Your Syles Are Here !</h3>
+          <p>
+            From bold color combinations to sleek monochrome options, each piece
+            is a statement in itself.<br> Embrace the spirit of authenticity and
+            individuality as you step out in one of our varsity jackets,
+            effortlessly combining comfort, style, and a touch of nostalgia.
+            Make a statement, make it yours , redefine your fashion journey.
+          </p>
+          <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="img">
+          <img id="big-img" src="jack-1.png" alt="" />
+        </div>
+
+        <div class="small-img">
+          <img onclick="myTshirt(this.src)" src="jack-1.png" alt="" />
+          <img onclick="myTshirt(this.src)" src="jack-2.png" alt="" />
+          <img onclick="myTshirt(this.src)" src="jack-3.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let bigImage = document.getElementById("big-img");
+
+      function myTshirt(shirt) {
+        bigImage.src = shirt;
+      }
+    </script>
+  </body>
+</html>
