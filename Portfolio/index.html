@@ -1,1 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sania Nidagundi</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <script
+      src="https://kit.fontawesome.com/c099e47c80.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    
+    <!-- Home -->
+
+    <nav id="desktop-nav">
+      <div class="logo">Sania</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sania</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section -->
+
+    <section id="profile">
+      <div class="section-pic">
+        <img src="profile.jpeg" alt="Sania profile picture" />
+      </div>
+      <div class="section-text">
+        <p class="section-text-p1">Hello, I'm</p>
+        <h1 class="title">Sania Nidagundi</h1>
+        <p class="section-text-p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('Sania_resume.pdf')"
+          >
+            Download CV
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="aBOUT-PIC.jpeg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Sania Nidagundi, a passionate and ambitious third-year student
+              pursuing Computer <br>Engineering.I believe in the power of teamwork
+              and enjoy being part of a diverse group<br> where ideas flow freely,
+              leading to innovative solutions. I have honed my communication<br>
+              skills through group projects, ensuring that ideas are not just
+              understood but also effectively<br> conveyed. This passion for
+              constant improvement is not only a personal commitment but a<br>
+              driving force behind my dedication to the field. 
+            </p>
+            <div class="tab-titles">
+              <p class="tab-link active-link" onclick="opentab('education')">
+                Education
+              </p>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2006-2019</span><br>Sinhgad City School</li>
+                <li><span>2019-2021</span><br>Sinhgad City School(11th and 12th)</li>
+                <li><span>2022-Present</span><br>Modern Education Society Wadia College of Engineering</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- \Skills -->
+
+    <div id="skills">
+      <h1 class="title">Skills</h1>
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="skills-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <div>
+                <h3>
+                  <a href=""><i class="fa-brands fa-css3-alt"></i></a> HTML
+                </h3>
+                <p>Intermediate</p>
+              </div>
+
+              <div>
+                <h3>
+                  <a href=""><i class="fa-brands fa-css3-alt"></i></a> CSS
+                </h3>
+                <p>Intermediate</p>
+              </div>
+
+              <div>
+                <h3>
+                  <a href=""><i class="fa-brands fa-js"></i></a> JavaScript
+                </h3>
+                <p>Basic</p>
+              </div>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="skills-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <div>
+                <h3>
+                  <a href=""><i class="fa-solid fa-database"></i></a>MySQL
+                </h3>
+                <p>Intermediate</p>
+              </div>
+
+              <div>
+                <h3>
+                  <a href=""><i class="fa-solid fa-leaf"></i></a>MongoDB
+                </h3>
+                <p>Intermediate</p>
+              </div>
+
+              <div>
+                <h3>
+                  <a href=""><i class="fa-brands fa-python"></i></a> Python
+                </h3>
+                <p>Intermediate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+
+    <div id="projects">
+      <div class="container">
+        <h1 class="sub-title">Projects</h1>
+
+        <div class="projects-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Web design: Where creativity meets functionality in pixels</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-diagram-project"></i>
+            <h2>UI/UX</h2>
+            <p>Design is not just what it looks like, but how it works</p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-circle-nodes"></i>
+            <h2>App Development</h2>
+            <p>Apps are the fingerprints of digital creativity.</p>
+            <a href="#">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Section -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i>nidagundisania@gmail.com
+            </p>
+            <p><i class="fa-solid fa-phone"></i>8668278340</p>
+
+            <div class="social-icons">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright section -->
+
+    <div class="copyright">
+      <p>
+        Copyright @Sania. Made with <i class="fa-solid fa-heart"></i> by Sania
+        Nidagundi
+      </p>
+    </div>
+    <script src="script.js"></script>
+
+    <script>
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwASi11ASW-clafZduKb0y_WlibyK4RGGkewpIVt5MIMrFa826LjnntvnxNcs49LOwG/exec";
+      const form = document.forms["submit-to-google-sheet"];
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => console.log("Success!", response))
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
+  </body>
+</html>
 
